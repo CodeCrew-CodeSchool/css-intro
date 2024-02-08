@@ -1,0 +1,85 @@
+<style>
+    @keyframes slideRightAndBack {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(95vw); /* Adjust the value as needed */ }
+        100% { transform: translateX(0); }
+    }
+
+    #emoji {
+        display: inline-block; /* Allows transformation */
+        animation: slideRightAndBack 2s infinite; /* Adjust timing as needed */
+    }
+
+    .header-container {
+        font-size: 0; /* Remove space between inline-block elements */
+    }
+
+    @keyframes rotateEmoji {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    #emoji2 {
+        animation: rotateEmoji 2s infinite linear; /* Adjust timing as needed */
+    }
+</style>
+
+<body style="background-color: cadetblue; overflow-x: hidden;">
+    <div class="header-container">
+        <h1 style="
+                display: inline-block;
+                width: 33.333%;
+                font-size: 40px;
+                text-align: center;
+                color: blue;
+                border-bottom-width: 3px;
+                border-bottom-color: blue;
+                border-bottom-style: solid;
+                font-family:sans-serif;
+            ">Hello World</h1>
+        <h1 style="
+                display: inline-block;
+                width: 33.333%;
+                font-size: 40px;
+                text-align: center;
+                color: violet;
+                border-bottom-width: 3px;
+                border-bottom-color: violet;
+                border-bottom-style: solid;
+                font-family: sans-serif;
+            ">Hello World</h1>
+
+        <h1 style="
+                display: inline-block;
+                width: 33.333%;
+                font-size: 40px;
+                text-align: center;
+                color: beige;
+                border-bottom-width: 3px;
+                border-bottom-color: beige;
+                border-bottom-style: solid;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            ">Hello World</h1>
+
+        <h1 id="emoji"
+            style="
+                display: inline-block;
+                /* width: 33.333%; */
+                font-size: 40px;
+                text-align: center;
+        ">😁</h1>
+            <h1 id="emoji2" 
+                style="
+                    margin-top:0%;
+                    font-size: 500px;
+                    text-align: center;
+            ">😵
+
+            </h1>
+
+    </div>
+</body>
