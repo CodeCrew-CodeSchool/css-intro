@@ -1,5 +1,45 @@
 <body style="font-size: 0;">
 <!-- Your Divs here -->
-<div></div>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    div {
+        width: 100vw;
+    }
+    #header {
+        height: 15vh;
+    }
+    #main {
+        height: 70vh;
+        display: flex;
+    }
+    #content {
+        height: 90%;
+        width: 70%;
+        margin: 2.5%;
+    }
+    #sidebar {
+        height: 70vh;
+        width: 20%;
+        margin: 0% 0 0% 2.5%;
+        position: absolute;
+        right: 0;
+    }
+    #footer {
+        height: 15vh;
+    }
+</style>
+
+<div id="header"></div> <!--header-->
+
+<div id="main">
+    <div id="content"></div>
+    <div id="sidebar"></div>
+</div> <!--main & sidebar-->
+
+<div id="footer"></div> <!--footer-->
+
 </body>
 <script src="./layout.js"></script>
