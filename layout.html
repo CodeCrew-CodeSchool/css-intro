@@ -30,25 +30,30 @@
     #footer {
         height: 15vh;
     }
+    /* attribute - a tags with a specific title attribute value */
     a[title="styled link"] {
         color: red;
     }
+    /* pseudo-class - a tags that have been clicked */
     a:visited {
         color: red;
     }
+    /* psuedo-class - a tags that are being hovered over */
     a:hover {
         color: green;
     }
+    /* pseudo-element - the first line of a paragraph */
     p::first-line {
         color: turquoise;
         font-family: 'Comic Sans';
     }
+    /* invalid pseudo-element attempt - the last line of a paragraph is not an existing pseudo-element */
     p::last-line {
         color: purple;
         font-family: Helvetica;
     }
 
-    /* Paragraphs that come immediately after any image */
+    /* Paragraphs that have a next paragraph following them */
     p:has(+ p) {
     font-weight: bold;
     }
