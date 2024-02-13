@@ -1,4 +1,4 @@
-<body style="font-size: 0;">
+<body style="">
 <!-- Your Divs here -->
 <style>
     body {
@@ -30,13 +30,50 @@
     #footer {
         height: 15vh;
     }
+    a[title="styled link"] {
+        color: red;
+    }
+    a:visited {
+        color: red;
+    }
+    a:hover {
+        color: green;
+    }
+    p::first-line {
+        color: turquoise;
+        font-family: 'Comic Sans';
+    }
+    p::last-line {
+        color: purple;
+        font-family: Helvetica;
+    }
+
+    /* Paragraphs that come immediately after any image */
+    p:has(+ p) {
+    font-weight: bold;
+    }
 </style>
 
 <div id="header"></div> <!--header-->
 
 <div id="main">
-    <div id="content"></div>
-    <div id="sidebar"></div>
+    <div>
+        <div id="content">
+            <a title="styled link" href="https://code-crew.org">This is our link</a>
+            <a title="not styled" href="https://google.com">This is just text</a>
+            <br/>
+            <img alt="no image" src=""/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem iusto earum modi quas facere consequatur fuga temporibus a ullam, architecto ab iure maxime amet nihil ad nostrum saepe ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores, doloremque, facilis incidunt quisquam earum facere, aliquid minima numquam molestiae praesentium cum pariatur dolore! Cumque numquam id perferendis ex distinctio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut pariatur eveniet aliquam! Numquam, a. Dolorum, possimus sapiente asperiores repudiandae officia, cumque aperiam consectetur quas quidem, veritatis eius labore facilis!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem iusto earum modi quas facere consequatur fuga temporibus a ullam, architecto ab iure maxime amet nihil ad nostrum saepe ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores, doloremque, facilis incidunt quisquam earum facere, aliquid minima numquam molestiae praesentium cum pariatur dolore! Cumque numquam id perferendis ex distinctio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut pariatur eveniet aliquam! Numquam, a. Dolorum, possimus sapiente asperiores repudiandae officia, cumque aperiam consectetur quas quidem, veritatis eius labore facilis!
+            </p>
+        </div>
+        <div id="sidebar"></div>
+    </div>
 </div> <!--main & sidebar-->
 
 <div id="footer"></div> <!--footer-->
