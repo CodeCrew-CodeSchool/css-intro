@@ -19,4 +19,29 @@
 
 ## Tuesday
 
-- Selectors
+- [Selectors](https://codeschoolcourses.slack.com/archives/C06ELJ3SV1A/p1707838519276469)
+
+    - Elementname/Tagname/Type Selectors
+    - Class Selector
+    - ID Selector
+    - Attribute Selector
+    - Pseudo-class Selector
+    - Pseudo-Element Selector
+
+## Wednesday
+
+- Box Model
+    - content
+    - padding
+    - border
+    - margin
+    - ++ block vs inline - new line vs same line
+    - ++ alternative model - no margin or padding
+
+- Flexbox
+
+    Control the layout of child elements either horizontally or vertically
+
+- Grid
+
+    Control the layout of child elements both horizontally and vertically
