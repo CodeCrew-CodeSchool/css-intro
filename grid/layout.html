@@ -1,97 +1,215 @@
-<style>
-    .break {
-        height: 50vh;
-    }
-    .flex-div {
-        display: flex;
-    }
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .area-container {
-        display: grid;
-        grid-template-areas: 
-        "header header header"
-        "content content content"
-        "footer footer footer";
-    }
-    .area-container header {
-        grid-area: header;
-    }
-    .area-container main {
-        grid-area: content;
-    }
-    .area-container footer {
-        grid-area: footer;
-    }
-</style>
-
-<h1>This div has it's display style set to "display: block;" by default</h1>
-<div class="box-div">
-    <div>
-        <h2>Column 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Medley</title>
+</head>
+<body>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+        }
+        .section {
+            height: 100vh;
+        }
+        .break {
+            flex-grow: 1;
+        }
+        .flex-div {
+            display: flex;
+            flex-direction: row;
+        }
+        .flex-list {
+            display: flex;
+            list-style: none;
+        }
+        .flex-list li {
+            margin-right: 15px;
+        }
+        .inline-text {
+            display: inline;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+        .area-container {
+            height: 100vh;
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "content content content"
+            "footer footer footer";
+        }
+        .area-container header {
+            grid-area: header;
+        }
+        .area-container main {
+            grid-area: content;
+        }
+        .area-container footer {
+            grid-area: footer;
+        }
+    </style>
+    <div class="section" style="background-color:#bcf98f">
+    <h1>This div has it's display style set to "display: block;" by default</h1>
+    <div class="box-div">
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
     </div>
-    <div>
-        <h2>Column 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
     </div>
-    <div>
-        <h2>Column 3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-</div>
-<div class="break"></div>
-
-<h1>This div has it's display style set to "display: flex;" by the flex-div class</h1>
-<div class="flex-div">
-    <div>
-        <h2>Column 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-    <div>
-        <h2>Column 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-    <div>
-        <h2>Column 3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-</div>
-<div class="break"></div>
-
-<h1>This div has it's display style set to "display: grid;" by the container class.</h1>
-<p>The grid is ordered into 3 rows and 3 columns via grid-template-areas</p>
-<div class="container">
-    <div>
-        <h2>Column 1</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-    <div>
-        <h2>Column 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-    <div>
-        <h2>Column 3</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </div>
-</div>
-<div class="break"></div>
-
-<h1>This div has it's display style set to "display: grid;" by the area-container class.</h1>
-<p>The grid is ordered into 3 rows via grid-template-areas</p>
-<p>Each area is specified with the grid-area style</p>
-<div class="area-container">
+    <div class="break"></div>
+    
+    <div class="section" style="background-color:#ffea89">
     <header>
-        <h1>Header Text</h1>
+        <h1>This div has it's display style set to "display: flex;" by the flex-div class</h1>
+        <p>"flex-direction: row;" arranges the content into separate columns on the same row. If it is changed to "flex-direction: column;", it would mirror the previous block layout</p>
     </header>
-    <main>
-        <h2>Content</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
-    </main>
+    <div class="flex-div">
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+            <p>The next list displays block</p>
+            
+            <ul class="normal-list">
+                <li>Lorem ipsum</li>
+                <li>ipsum Lorem</li>
+                <li>Lorem ipsum</li>
+            </ul>
+
+            <p>The next list displays flex</p>
+            <ul class="flex-list">
+                <li>Lorem ipsum</li>
+                <li>ipsum Lorem</li>
+                <li>Lorem ipsum</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+            
+            <p>The following text is inline, the above is block</p>
+            
+            <p class="inline-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui voluptatibus quo excepturi! Sed quam quibusdam libero, impedit facilis placeat veritatis accusamus, unde nulla minus nostrum autem praesentium suscipit cumque ratione!</p>
+            <p class="inline-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio fuga vero commodi, esse repudiandae totam quis tempora veniam nihil iste facilis consectetur ipsam error, ullam illum iusto doloremque enim obcaecati?</p>
+
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <a style="display: inline-block;" href="/">Link Text</a>
+            <!-- <a style="display: inline-block;" href="/">Link Text</a> 
+                add or remove any of these items to see how they align 
+                with the following images
+
+            -->
+            <img style="display: inline-block;" src="C.png"/>
+            <img style="display: block;" src="C.png"/>
+            <p>The first image displays inline-block so it will join inline with the links if possible, the second image is block so it doesn't play well with others.</p>
+        </div>
+    </div>
+    </div>
+    <div class="break"></div>
+    
+    <div class="section" style="background-color:#f9c58e">
+    
+    <header>
+        <h1>This div has it's display style set to "display: grid;" by the container class.</h1>
+        <p>The grid is ordered into 3 columns and as many rows as needed via grid-template-areas</p>
+    </header>
+    <div class="container">
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+        <div>
+            <h2>Column 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </div>
+    </div>
     <footer>
-        <h3>Footer</h3>
+       <h3>Footer</h3>
     </footer>
-</div>
-<div class="break"></div>
+    </div>
+    <div class="break"></div>
+    
+    <div class="section" style="background-color:#fc918c">
+    <h1>This div has it's display style set to "display: grid;" by the area-container class.</h1>
+    <p>The grid is ordered into 3 rows via grid-template-areas</p>
+    <p>Each area is specified with the grid-area style</p>
+    <div class="area-container">
+        <header>
+            <h1>Header Text</h1>
+        </header>
+        <main>
+            <h2>Content</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, officia! Dignissimos accusantium, sed incidunt porro ipsam, eius at neque dolores atque repellendus culpa cupiditate nisi? Eius excepturi qui distinctio dolore?</p>
+        </main>
+        <footer>
+            <h3>Footer</h3><span>powered by CodeCrew</span>
+        </footer>
+    </div>
+    </div>
+    <!-- <div class="break"></div> -->
+</body>
+</html>
