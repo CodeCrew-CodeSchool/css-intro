@@ -1,0 +1,92 @@
+<body style="">
+<!-- Your Divs here -->
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+    }
+    div {
+        width: 100vw;
+    }
+    #header {
+        height: 15vh;
+    }
+    #main {
+        height: 70vh;
+        display: flex;
+    }
+    #content {
+        height: 90%;
+        width: 70%;
+        margin: 2.5%;
+    }
+    #sidebar {
+        height: 70vh;
+        width: 20%;
+        margin: 0% 0 0% 2.5%;
+        position: absolute;
+        right: 0;
+    }
+    #footer {
+        height: 15vh;
+    }
+    /* attribute - a tags with a specific title attribute value */
+    a[title="styled link"] {
+        color: red;
+    }
+    /* pseudo-class - a tags that have been clicked */
+    a:visited {
+        color: red;
+    }
+    /* psuedo-class - a tags that are being hovered over */
+    a:hover {
+        color: green;
+    }
+    /* pseudo-element - the first line of a paragraph */
+    p::first-line {
+        color: turquoise;
+        font-family: 'Comic Sans';
+    }
+    /* invalid pseudo-element attempt - the last line of a paragraph is not an existing pseudo-element */
+    p::last-line {
+        color: purple;
+        font-family: Helvetica;
+    }
+
+    /* Paragraphs that have a next paragraph following them */
+    p:has(+ p) {
+    font-weight: bold;
+    }
+</style>
+
+<div id="header"></div> <!--header-->
+
+<div id="main">
+    <div>
+        <div id="content">
+            <ul style="display: flex; list-style: none;">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            </ul>
+            <a title="styled link" href="https://code-crew.org">This is our link</a>
+            <a title="not styled" href="https://google.com">This is just text</a>
+            <br/>
+            <img alt="no image" src=""/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem iusto earum modi quas facere consequatur fuga temporibus a ullam, architecto ab iure maxime amet nihil ad nostrum saepe ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores, doloremque, facilis incidunt quisquam earum facere, aliquid minima numquam molestiae praesentium cum pariatur dolore! Cumque numquam id perferendis ex distinctio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut pariatur eveniet aliquam! Numquam, a. Dolorum, possimus sapiente asperiores repudiandae officia, cumque aperiam consectetur quas quidem, veritatis eius labore facilis!
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo autem iusto earum modi quas facere consequatur fuga temporibus a ullam, architecto ab iure maxime amet nihil ad nostrum saepe ipsum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dolores, doloremque, facilis incidunt quisquam earum facere, aliquid minima numquam molestiae praesentium cum pariatur dolore! Cumque numquam id perferendis ex distinctio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis aut pariatur eveniet aliquam! Numquam, a. Dolorum, possimus sapiente asperiores repudiandae officia, cumque aperiam consectetur quas quidem, veritatis eius labore facilis!
+            </p>
+        </div>
+        <div id="sidebar"></div>
+    </div>
+</div> <!--main & sidebar-->
+
+<div id="footer"></div> <!--footer-->
+
+</body>
+<script src="./layout.js"></script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Layouts</title>
+    <link rel="stylesheet" href="styles.css"/> <!-- External CSS -->
+</head>
+<body>
+    <!-- CSS Style Block -->
+    <style> 
+        main {
+            width: 250px;
+        }
+        aside {
+            float: left;
+            /* the style element has more rank in 
+            calling a style for an element than the styles.css file
+            all asides should float left*/
+        }
+    </style>
+    
+    <navbar>Header</navbar>
+    <!-- Inline CSS -->
+    <!-- the first aside has specific orders. 
+        this has the highest rank on the style of the element
+    it will float right, while Side 2 floats left -->
+    <main style="width: 300px;">
+        Main Content
+        <aside style="float: right;">Side 1</aside>
+        <aside>Side 2</aside>
+    </main>
+    <footer>Footer</footer>
+<!-- this page is based on semantic html elements.
+Instead of focusing on the content with <p>, <img>, <a>, <h1>
+    we can set a simple layout up with these grouping elements: header/navbar, main, footer
+and add our content elements inside.
+This gives us more control to articule and design our pages -->
+</body>
+</html>

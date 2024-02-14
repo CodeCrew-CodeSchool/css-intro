@@ -38,10 +38,24 @@
     - ++ block vs inline - new line vs same line
     - ++ alternative model - no margin or padding
 
-- Flexbox
+- Flex
 
     Control the layout of child elements either horizontally or vertically
 
 - Grid
 
     Control the layout of child elements both horizontally and vertically
+
+
+## Layout Examples
+
+The folders in this repo contain a collection of the various ways of setting up page layouts we've discussed this week.
+
+semantic 
+- using semantic elements and the float style for sidebars, we can arrange content on our page based on our content.
+
+div 
+- irrespective of content, we can generate a layout using div elements and give them a percentage of the page they can take up.
+
+grid 
+- going all in, we can use semantic elements where applicable, and style our page with a specific grid layout to properly space elements
