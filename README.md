@@ -51,11 +51,11 @@
 
 The folders in this repo contain a collection of the various ways of setting up page layouts we've discussed this week.
 
-semantic 
+[semantic](https://codecrew-codeschool.github.io/css-intro/semantic/layout.html) 
 - using semantic elements and the float style for sidebars, we can arrange content on our page based on our content.
 
-div 
+[div](https://codecrew-codeschool.github.io/css-intro/div/layout.html) 
 - irrespective of content, we can generate a layout using div elements and give them a percentage of the page they can take up.
 
-grid 
+[grid](https://codecrew-codeschool.github.io/css-intro/grid/layout.html) 
 - going all in, we can use semantic elements where applicable, and style our page with a specific grid layout to properly space elements
