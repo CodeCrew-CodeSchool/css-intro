@@ -1,0 +1,17 @@
+@media (width <= 1250px) {
+    body {
+        background-color: black;
+        color: pink;
+    }
+}
+@media (width > 1250px) {
+    body {
+        background-color: lightgray;
+    }
+    .content {
+        display: flex;
+    }
+}
+/* BEGIN with the END in MIND -brainEmoji- 
+-- Georleshia Minter, 
+   Systems Engineer @ AutoZone HQ */
