@@ -40,9 +40,12 @@
             height: 100vh;
             display: grid;
             grid-template-areas: 
-            "header header header"
-            "content content content"
-            "footer footer footer";
+            "sidebar header header header"
+            "sidebar content content content"
+            "sidebar footer footer footer";
+        }
+        .area-container aside {
+            grid-area: sidebar;
         }
         .area-container header {
             grid-area: header;
@@ -198,6 +201,9 @@
     <p>The grid is ordered into 3 rows via grid-template-areas</p>
     <p>Each area is specified with the grid-area style</p>
     <div class="area-container">
+        <aside>
+            sidebar with chats
+        </aside>
         <header>
             <h1>Header Text</h1>
         </header>
