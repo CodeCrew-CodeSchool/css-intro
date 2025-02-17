@@ -1,0 +1,1 @@
+Use the Layout file to work with blocking out a layout. Any div you add on the screen will be outlined to help with a live visual of your design 
